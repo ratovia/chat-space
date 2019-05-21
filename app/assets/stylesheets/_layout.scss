@@ -1,0 +1,62 @@
+@import "./variable";
+
+*{
+  box-sizing: border-box;
+}
+
+html, body ,.wrapper{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper{
+  overflow: hidden;
+}
+
+.side{
+  width: $side-width;
+  height: 100vh;
+  float: left;
+}
+
+.side-top{
+  width: $side-width;
+  height: $top-height;
+  background: $DarkSlateGray;
+}
+
+.side-bottom{
+  width: $side-width;
+  height: calc(100vh - #{$top-height});
+  background: $SlateGray;
+}
+
+.main{
+  width: $main-width;
+  height: 100vh;
+  float: right;
+}
+
+.main-top{
+  width: $main-width;
+  background: $white;
+  height: $top-height;
+}
+
+.main-center{
+  width: $main-width;
+  height: calc(100vh - 100px - 20px - 20px - 50px);
+  background: $WhiteSmoke;
+}
+
+.main-bottom{
+  width: $main-width;
+  height: calc(20px + 20px + 50px);
+  padding: 20px 40px;
+  background: $lightGray;
+  position:fixed;
+  bottom: 0;
+  right: 0;
+}
