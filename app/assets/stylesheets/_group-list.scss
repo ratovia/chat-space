@@ -1,0 +1,18 @@
+.group-list{
+  padding: 0 20px;
+}
+
+.group-item{
+  padding: 20px 0;
+  color: $white;
+  font-weight: bold;
+
+  .group-item__group-name{
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+
+  .group-item__latest-message{
+    font-size: 11px;
+  }
+}
