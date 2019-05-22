@@ -7,12 +7,12 @@
   color: $white;
   font-weight: bold;
 
-  .group-item__group-name{
+  &__group-name{
     font-size: 15px;
     padding-bottom: 5px;
   }
 
-  .group-item__latest-message{
+  &__latest-message{
     font-size: 11px;
   }
 }

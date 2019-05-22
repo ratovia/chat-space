@@ -3,23 +3,23 @@
   height: $top-height;
   border-bottom: 1px solid #eeeeee;
 
-  .group-info__box{
+  &__box{
     margin-top: 35px;
     float: left;
 
-    .group-info__box__group-name{
+    &__group-name{
       margin-bottom: 15px;
       color: #333333;
       font-size: 20px;
     }
 
-    .group-info__box__members{
+    &__members{
       color:#999999;
       font-size: 12px;
     }
   }
 
-  .group-info__edit-button{
+  &__edit-button{
     height: 40px;
     margin-top: 28px;
     padding: 0 20px;
