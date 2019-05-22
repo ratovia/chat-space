@@ -1,7 +1,7 @@
 .message-form
   .input-parts
-    %input{:type => "text",:class => "input-parts__text",:placeholder => "type a message", :name => "message"}
-    %label.input-parts__image{:for => "file"}
+    %input{type: "text",class: "input-parts__text",placeholder: "type a message", name: "message"}
+    %label.input-parts__image{for: "file"}
       = fa_icon "image"
-      %input{:type => "file", :name => "file"}
-  %input{:type => "submit",:class => "message-form__submit",:value => "Send"}
+      %input{type: "file", name: "file"}
+  %input{type: "submit",class: "message-form__submit",value: "Send"}
