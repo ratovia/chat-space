@@ -1,0 +1,33 @@
+.message-list{
+  padding: 46px 40px;
+  overflow-y: auto;
+}
+
+.message-item{
+  &__upper{
+    padding-bottom: 10px;
+
+    &__username{
+      display: inline-block;
+      font-size: 16px;
+      font-weight: bold;
+      color: #434A54;
+    }
+
+    &__timestamp{
+      display: inline-block;
+      color: #999999;
+      font-size: 12px;
+      margin-left: 10px;
+      font-weight: normal;
+      vertical-align: top;
+    }
+  }
+
+  &__under{
+    padding-bottom: 40px;
+    font-size:14px;
+    color: #434A54;
+  }
+}
+

@@ -1,0 +1,32 @@
+.group-info{
+  padding: 0 40px;
+  height: $top-height;
+  border-bottom: 1px solid #eeeeee;
+
+  &__box{
+    margin-top: 35px;
+    float: left;
+
+    &__group-name{
+      margin-bottom: 15px;
+      color: #333333;
+      font-size: 20px;
+    }
+
+    &__members{
+      color:#999999;
+      font-size: 12px;
+    }
+  }
+
+  &__edit-button{
+    height: 40px;
+    margin-top: 28px;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 40px;
+    float: right;
+    border: 1px solid $lightBlue;
+    color: $lightBlue;
+  }
+}

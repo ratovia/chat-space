@@ -1,0 +1,42 @@
+.message-form{
+  padding: 20px 40px;
+
+  &__submit{
+    display:block;
+    width: 100px;
+    height: 50px;
+    padding: 0 30px;
+    margin-left: 15px;
+    background-color: $lightBlue;
+    color:white;
+    float:right;
+  }
+}
+
+.input-parts{
+  background-color: $white;
+  width: calc(100% - 100px - 15px);
+  height:50px;
+  float:left;
+  position: relative;
+  &__text{
+    padding: 0 40px 0 10px;
+    width: 100%;
+    border:none;
+    height:50px;
+  }
+
+  &__image{
+    position: absolute;
+    right: 0px;
+    top: calc( 50px / 2 - 21px / 2);
+    padding: 0 10px;
+    i{
+      float: right;
+      font-size: 21px;
+    }
+    input{
+      display:none;
+    }
+  }
+}

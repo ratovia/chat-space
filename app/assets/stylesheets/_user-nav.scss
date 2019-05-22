@@ -1,0 +1,24 @@
+.user-nav{
+  padding: 0px 20px;
+
+  &__user-name{
+    color: $white;
+    font-size: 16px;
+    font-weight:bold;
+    float: left;
+    line-height: $top-height;
+  }
+
+  &__menu{
+    float: right;
+
+    &__new-group,
+    &__edit-account{
+      float:left;
+      line-height: $top-height;
+      color: white;
+      margin-left: 0.3rem;
+    }
+  }
+}
+
