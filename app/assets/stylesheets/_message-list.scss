@@ -11,12 +11,12 @@
       display: inline-block;
       font-size: 16px;
       font-weight: bold;
-      color: #434A54;
+      color: $Mako;
     }
 
     &__timestamp{
       display: inline-block;
-      color: #999999;
+      color: $DustyGray;
       font-size: 12px;
       margin-left: 10px;
       font-weight: normal;
@@ -27,7 +27,7 @@
   &__under{
     padding-bottom: 40px;
     font-size:14px;
-    color: #434A54;
+    color: $Mako;
   }
 }
 

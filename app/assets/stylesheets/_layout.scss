@@ -24,13 +24,13 @@ html, body ,.wrapper{
 .side-top{
   width: $side-width;
   height: $top-height;
-  background: $DarkSlateGray;
+  background: $EbonyClay;
 }
 
 .side-bottom{
   width: $side-width;
   height: calc(100vh - #{$top-height});
-  background: $SlateGray;
+  background: $PickledBluewood;
 }
 
 .main{
@@ -48,13 +48,13 @@ html, body ,.wrapper{
 .main-center{
   width: $main-width;
   height: calc(100vh - 100px - 20px - 20px - 50px);
-  background: $WhiteSmoke;
+  background: $Alabaster;
 }
 
 .main-bottom{
   width: $main-width;
   height: calc(20px + 20px + 50px);
-  background: $lightGray;
+  background: $Alto;
   position:fixed;
   bottom: 0;
   right: 0;

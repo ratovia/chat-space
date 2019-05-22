@@ -1,7 +1,7 @@
 .group-info{
   padding: 0 40px;
   height: $top-height;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid $Gallery;
 
   &__box{
     margin-top: 35px;
@@ -9,12 +9,12 @@
 
     &__group-name{
       margin-bottom: 15px;
-      color: #333333;
+      color: $MineShaft;
       font-size: 20px;
     }
 
     &__members{
-      color:#999999;
+      color:$DustyGray;
       font-size: 12px;
     }
   }
@@ -26,7 +26,7 @@
     text-align: center;
     line-height: 40px;
     float: right;
-    border: 1px solid $lightBlue;
-    color: $lightBlue;
+    border: 1px solid $PictonBlue;
+    color: $PictonBlue;
   }
 }
