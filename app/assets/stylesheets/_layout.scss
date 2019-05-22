@@ -47,13 +47,13 @@ html, body ,.wrapper{
 
 .main-center{
   width: $main-width;
-  height: calc(100vh - 100px - 20px - 20px - 50px);
+  height: $main-center-height;
   background: $Alabaster;
 }
 
 .main-bottom{
   width: $main-width;
-  height: calc(20px + 20px + 50px);
+  height: $main-bottom-height;
   background: $Alto;
   position:fixed;
   bottom: 0;
