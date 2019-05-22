@@ -12,11 +12,15 @@
   &__menu{
     float: right;
 
+    a, a:visited {
+      color: $white;
+    }
+
     &__new-group,
     &__edit-account{
       float:left;
       line-height: $top-height;
-      color: white;
+      color:$white;
       margin-left: 0.3rem;
     }
   }

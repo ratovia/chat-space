@@ -1,15 +1,27 @@
 // size variables
+//// layout-size
 $side-width: 300px;
 $main-width: calc(100vw - #{$side-width});
-
 $top-height: 100px;
+$main-bottom-height: calc(20px + 20px + 50px);
+$main-center-height: calc(100vh - #{$top-height} - #{$main-bottom-height});
 
+//// element-size
+$message-form__submit__width: 100px;
+$message-form__submit__margin: 15px;
+$input-parts__width: calc(100% - #{$message-form__submit__width} - #{$message-form__submit__margin});
+$input-parts__height: 50px;
+$input-parts__image_font-size: 21px;
+$input-parts__image__top: calc( (#{$input-parts__height} - #{$input-parts__image_font-size}) / 2);
 
 // color variables
 $white: white;
-$DarkSlateGray: #253141;
-$SlateGray: #2f3e51;
-$lightGray: #DDDDDD;
-$WhiteSmoke: #fafafa;
-$lightBlue: #38AEF0;
-
+$Alabaster: #fafafa;
+$Gallery: #eeeeee;
+$Alto: #DDDDDD;
+$DustyGray: #999999;
+$Mako: #434A54;
+$PictonBlue: #38AEF0;
+$MineShaft: #333333;
+$PickledBluewood: #2f3e51;
+$EbonyClay: #253141;

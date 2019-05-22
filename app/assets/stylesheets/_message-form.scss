@@ -3,20 +3,20 @@
 
   &__submit{
     display:block;
-    width: 100px;
+    width: $message-form__submit__width;
     height: 50px;
     padding: 0 30px;
-    margin-left: 15px;
-    background-color: $lightBlue;
-    color:white;
+    margin-left: $message-form__submit__margin;
+    background-color: $PictonBlue;
+    color:$white;
     float:right;
   }
 }
 
 .input-parts{
   background-color: $white;
-  width: calc(100% - 100px - 15px);
-  height:50px;
+  width: $input-parts__width;
+  height:$input-parts__height;
   float:left;
   position: relative;
   &__text{
@@ -29,11 +29,11 @@
   &__image{
     position: absolute;
     right: 0px;
-    top: calc( 50px / 2 - 21px / 2);
+    top: $input-parts__image__top;
     padding: 0 10px;
     i{
       float: right;
-      font-size: 21px;
+      font-size: $input-parts__image_font-size;
     }
     input{
       display:none;
