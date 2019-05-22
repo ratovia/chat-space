@@ -18,6 +18,10 @@
       font-size: 12px;
     }
   }
+  a, a:visited {
+    color : $PictonBlue;
+    text-decoration: none;
+  }
 
   &__edit-button{
     height: 40px;
@@ -28,5 +32,6 @@
     float: right;
     border: 1px solid $PictonBlue;
     color: $PictonBlue;
+
   }
 }
