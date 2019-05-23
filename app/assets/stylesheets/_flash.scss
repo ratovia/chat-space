@@ -1,0 +1,17 @@
+.notification {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  .notice {
+    background-color: $PictonBlue;
+    color: $white;
+    text-align: center;
+  }
+
+  .alert {
+    background-color: $InternationalOrange;
+    color: $white;
+    text-align: center;
+  }
+}
