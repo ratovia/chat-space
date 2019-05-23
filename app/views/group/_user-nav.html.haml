@@ -1,10 +1,10 @@
 .user-nav
   .user-nav__user-name
-    John
+    = current_user.name
   .user-nav__menu
     .user-nav__menu__new-group
       = link_to do
         = fa_icon "edit"
     .user-nav__menu__edit-account
-      = link_to do
+      = link_to edit_user_path(current_user) do
         = fa_icon "cog"
