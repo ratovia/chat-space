@@ -1,6 +1,14 @@
 %ul.group-list
-  %li.group-item
-    .group-item__group-name
-      group1
-    .group-item__latest-message
-      hello!
+  - current_user.groups.each do |group|
+    = link_to group_messages_path(group) do
+      %li.group-item
+        .group-item__group-name
+          = group.name
+        .group-item__latest-message
+          - unless group.messages.empty?
+            - if group.messages.last.text.empty?
+              画像が投稿されました。
+            - else
+              = group.messages.last.text
+          - else
+            まだメッセージはありません。

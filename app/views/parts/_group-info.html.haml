@@ -1,9 +1,12 @@
 .group-info
   .group-info__box
     .group-info__box__group-name
-      group1
+      = @group.name
     .group-info__box__members
-      Member：John
+      Member：
+      - @group.users.each do |user|
+        = user.name
+
   .group-info__edit-button
-    = link_to do
+    = link_to edit_group_path(@group) do
       Edit
