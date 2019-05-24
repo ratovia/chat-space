@@ -1,6 +1,5 @@
 .message-list{
   padding: 46px 40px;
-  overflow-y: auto;
 }
 
 .message-item{
@@ -28,6 +27,11 @@
     padding-bottom: 40px;
     font-size:14px;
     color: $Mako;
+
+    &__image{
+      max-width: 400px;
+      max-height: 400px;
+    }
   }
 }
 

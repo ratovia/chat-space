@@ -49,6 +49,7 @@ html, body ,.wrapper{
   width: $main-width;
   height: $main-center-height;
   background: $Alabaster;
+  overflow-y: auto;
 }
 
 .main-bottom{

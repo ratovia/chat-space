@@ -1,7 +1,13 @@
-%form.message-form{method: "post"}
-  .input-parts
-    %input{type: "text",class: "input-parts__text",placeholder: "type a message", name: "message"}
-    %label.input-parts__image{for: "file"}
-      = fa_icon "image"
-      %input{type: "file", name: "file", id: "file"}
-  %input{type: "submit",class: "message-form__submit",value: "Send"}
+-# %form.message-form{method: "post"}
+.message-form
+  = form_for [@group, @message] do |f|
+    .input-parts
+      -# %input{type: "text",class: "input-parts__text",placeholder: "type a message", name: "message"}
+      = f.text_field :text, class: "input-parts__text", placeholder: "type a message"
+      -# %label.input-parts__image{for: "file"}
+      = f.label :image, class: "input-parts__image" do
+        = fa_icon "image"
+        -# %input{type: "file", name: "file", id: "file"}
+        = f.file_field :image
+    -# %input{type: "submit",class: "message-form__submit",value: "Send"}
+    = f.submit "Send", class: "message-form__submit"

@@ -1,9 +1,12 @@
 %ul.message-list
-  %li.message-item
-    .message-item__upper
-      %p.message-item__upper__username
-        John
-      %p.message-item__upper__timestamp
-        2019/05/18(Sat) 19:59:02
-    .message-item__under
-      youyou
+  - @messages.each do |message|
+    %li.message-item
+      .message-item__upper
+        %p.message-item__upper__username
+          = message.user.name
+        %p.message-item__upper__timestamp
+          -# 2019/05/18(Sat) 19:59:02
+          = message.created_at.strftime("%Y/%m/%d %H:%M")
+      .message-item__under
+        = message.text
+        = image_tag message.image, class: "message-item__under__image"if message.image.present?
