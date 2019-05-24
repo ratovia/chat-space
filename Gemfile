@@ -43,6 +43,13 @@ gem 'erb2haml'
 gem "font-awesome-rails"
 # Use devise
 gem "devise"
+# Use pry
+gem "pry-rails"
+# Use carrierWave
+gem "carrierwave"
+# Use mini_magick
+gem "mini_magick"
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
