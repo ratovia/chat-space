@@ -7,9 +7,11 @@ class MessagesController < ApplicationController
 
   def create
     @group = Group.find(group_params[:group_id])
-    # binding.pry
     @message = Message.create(messages_params)
-    redirect_to group_messages_path(@group)
+    respond_to do |format|
+      format.html {redirect_to group_messages_path(@group)}
+      format.json
+    end
   end
 
   private

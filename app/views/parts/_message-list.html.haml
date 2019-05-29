@@ -8,5 +8,5 @@
           -# 2019/05/18(Sat) 19:59:02
           = message.created_at.strftime("%Y/%m/%d %H:%M")
       .message-item__under
-        = message.text
+        %p= message.text
         = image_tag message.image, class: "message-item__under__image"if message.image.present?
