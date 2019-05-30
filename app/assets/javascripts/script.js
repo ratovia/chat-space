@@ -1,5 +1,5 @@
 $(function(){
-  const poling_time = 5000;
+  const POLING_TIME = 5000;
 
   function append_member_list(id,name){
     let html = `
@@ -141,5 +141,5 @@ $(function(){
     }
   };
 
-  setInterval(reloadMessages,poling_time);
+  setInterval(reloadMessages,POLING_TIME);
 });
