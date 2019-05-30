@@ -1,5 +1,6 @@
 $(function(){
-  const poling_time = 5000;
+  const POLING_TIME = 5000;
+
   function append_message_list(message){
     let text = message.text ? `${message.text}` : "";
     let image = message.image.url ? `${message.image.url}` : "";
@@ -65,5 +66,5 @@ $(function(){
     }
   };
 
-  setInterval(reloadMessages,poling_time);
+  setInterval(reloadMessages,POLING_TIME);
 });
