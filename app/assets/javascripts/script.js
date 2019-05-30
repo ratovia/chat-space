@@ -1,9 +1,10 @@
 $(function(){
-  function appendList(message){
+  const poling_time = 5000;
+  function append_message_list(message){
     let text = message.text ? `${message.text}` : "";
     let image = message.image.url ? `${message.image.url}` : "";
     let html = `
-                <li class="message-item">
+                <li class="message-item" data-message data-id="${message.id}">
                   <div class="message-item__upper">
                     <p class="message-item__upper__username">
                       ${message.user_name}
@@ -44,4 +45,25 @@ $(function(){
       alert("エラーが発生しました");
     });
   });
+
+  var reloadMessages = function() {
+    if (window.location.href.match(/\/groups\/[0-9]+\/messages/)){
+      let last_message_id = $(".message-item").eq(-1).data("id");
+      $.ajax({
+        url: "./api/messages",
+        type: 'get',
+        dataType: 'json',
+        data: {message_id: last_message_id}
+      }).done(function(messages) {
+        messages.forEach(function(message){
+          append_message_list(message);
+        })
+        $(".main-center").animate({scrollTop: $(".message-list")[0].scrollHeight }, 'fast');
+      }).fail(function() {
+        alert('新規メッセージをロードできませんでした。');
+      });
+    }
+  };
+
+  setInterval(reloadMessages,poling_time);
 });
