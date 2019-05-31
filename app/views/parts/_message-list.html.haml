@@ -1,6 +1,6 @@
 %ul.message-list
   - @messages.each do |message|
-    %li.message-item
+    %li.message-item{data: {id: message.id}}
       .message-item__upper
         %p.message-item__upper__username
           = message.user.name

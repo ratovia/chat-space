@@ -1,4 +1,6 @@
 $(function(){
+  const POLING_TIME = 5000;
+
   function append_member_list(id,name){
     let html = `
                 <div class='chat-group-user clearfix js-chat-member' id='chat-group-user-${id}'>
@@ -39,7 +41,7 @@ $(function(){
     let text = message.text ? `${message.text}` : "";
     let image = message.image.url ? `${message.image.url}` : "";
     let html = `
-                <li class="message-item">
+                <li class="message-item" data-message data-id="${message.id}">
                   <div class="message-item__upper">
                     <p class="message-item__upper__username">
                       ${message.user_name}
@@ -119,4 +121,25 @@ $(function(){
     let id_selector = $(this).parent().attr("id");
     remove_member_list(id_selector);
   });
+
+  var reloadMessages = function() {
+    if (window.location.href.match(/\/groups\/[0-9]+\/messages/)){
+      let last_message_id = $(".message-item").eq(-1).data("id");
+      $.ajax({
+        url: "./api/messages",
+        type: 'get',
+        dataType: 'json',
+        data: {message_id: last_message_id}
+      }).done(function(messages) {
+        messages.forEach(function(message){
+          append_message_list(message);
+        })
+        $(".main-center").animate({scrollTop: $(".message-list")[0].scrollHeight }, 'fast');
+      }).fail(function() {
+        alert('新規メッセージをロードできませんでした。');
+      });
+    }
+  };
+
+  setInterval(reloadMessages,POLING_TIME);
 });
