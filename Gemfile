@@ -49,7 +49,8 @@ gem "pry-rails"
 gem "carrierwave"
 # Use mini_magick
 gem "mini_magick"
-
+# Use AWS S3
+gem 'fog-aws'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
