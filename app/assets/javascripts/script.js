@@ -19,8 +19,8 @@ $(function(){
   function append_user_list(users){
     users.forEach(function(user){
       let appendFlag = true;
-      $(".chat-group-user__name").each(function(i){
-        name = $(".chat-group-user__name").eq(i).text().replace(/\r?\n/g, '');
+      $(".chat-group-user__name").each(function(){
+        name = $(this).text().replace(/\r?\n/g, '');
         if(name == user.name){
           appendFlag = false;
         }
@@ -134,7 +134,9 @@ $(function(){
         messages.forEach(function(message){
           append_message_list(message);
         })
-        $(".main-center").animate({scrollTop: $(".message-list")[0].scrollHeight }, 'fast');
+        if(messages.length){
+          $(".main-center").animate({scrollTop: $(".message-list")[0].scrollHeight }, 'fast');
+        }
       }).fail(function() {
         alert('新規メッセージをロードできませんでした。');
       });
