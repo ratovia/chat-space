@@ -1,5 +1,5 @@
 %ul.group-list
-  - current_user.groups.each do |group|
+  - @groups.each do |group|
     = link_to group_messages_path(group) do
       %li.group-item
         .group-item__group-name

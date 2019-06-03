@@ -7,6 +7,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @groups = current_user.groups.includes(:messages)
   end
 
   def edit
