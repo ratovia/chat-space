@@ -59,7 +59,9 @@ $(function(){
         messages.forEach(function(message){
           append_message_list(message);
         })
-        $(".main-center").animate({scrollTop: $(".message-list")[0].scrollHeight }, 'fast');
+        if(messages.length){
+          $(".main-center").animate({scrollTop: $(".message-list")[0].scrollHeight }, 'fast');
+        }
       }).fail(function() {
         alert('新規メッセージをロードできませんでした。');
       });
