@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def show
+    @groups = current_user.groups.includes(:messages)
   end
 
   def edit
