@@ -1,3 +1,33 @@
+# Chat-Space
+Chat-Space is a simple chat application.
+We can create group and send messages.
+![スクリーンショット](https://github.com/ratovia/chat-space/blob/readme-images/スクリーンショット%202019-06-11%2017.03.30.png "a")
+![スクリーンショット2](https://github.com/ratovia/chat-space/blob/readme-images/75b1e9ee120dae23740eece10e5922ea.gif "スクリーンショット2")
+## description
+Tech::Expertの応用カリキュラムで作成したチャットアプリです。
+Ajaxの非同期通信を使用して複数ユーザでのチャットを可能にしています。
+
+# Environment
+- Ruby(v2.5.1p57)
+- Ruby on Rails(v5.0.7.2)
+- HTML css javascript
+- scss
+- Haml
+- jQuery
+## database
+- MySQL 5.6
+- AWS S3
+
+## deploy
+- capistrano
+- nginx
+- unicorn
+## test
+- rspec
+- bullet
+- faker
+- ractory_bot
+
 # Database design
 
 ## usersテーブル
