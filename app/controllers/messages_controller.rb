@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-  before_action :set_group, except: [:index,:create]
+  before_action :set_group, except: [:create]
   def index
     @groups = current_user.groups.includes(:messages) #サイドバー用のグループ
     @message = Message.new #form_for用の新規にメッセージ送る用
