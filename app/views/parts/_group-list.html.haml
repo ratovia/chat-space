@@ -5,10 +5,10 @@
         .group-item__group-name
           = group.name
         .group-item__latest-message
-          - unless group.messages.empty?
+          - if group.messages.empty?
+            まだメッセージはありません。
+          - else
             - if group.messages.last.text.empty?
               画像が投稿されました。
             - else
               = group.messages.last.text
-          - else
-            まだメッセージはありません。
