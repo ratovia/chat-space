@@ -1,7 +1,7 @@
 $(function(){
 // $(document).on("turbolinks:load",function(){
 
-  const POLING_TIME = 5000;
+  const POLING_TIME = 7000;
 
   function append_member_list(id,name){
     let html = `
