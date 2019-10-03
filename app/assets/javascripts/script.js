@@ -1,5 +1,5 @@
 $(function(){
-  const POLING_TIME = 5000;
+  const POLING_TIME = 7000;
 
   function append_message_list(message){
     let text = message.text ? `${message.text}` : "";
