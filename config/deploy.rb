@@ -1,5 +1,7 @@
 # config valid only for current version of Capistrano
 lock '3.11.0'
+ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
+
 set :application, 'chat-space'
 set :repo_url,  'git@github.com:ratovia/chat-space.git'
 
