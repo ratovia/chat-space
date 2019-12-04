@@ -1,4 +1,6 @@
 $(function(){
+// link_to "HOME", root_path, data: {"turbolinks" => false}
+// https://qiita.com/hodosan/items/ee84482d18d6dccd9488
 // $(document).on("turbolinks:load",function(){
 
   const POLING_TIME = 7000;
