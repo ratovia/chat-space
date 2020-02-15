@@ -17,7 +17,7 @@
 .byebug_history
 
 # Ignore uploads picture files
-
+public/uploads/*
 
 # Ignore uploads secrets files
 config/secrets.yml
