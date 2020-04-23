@@ -24,13 +24,13 @@ html, body ,.wrapper{
 .side-top{
   width: $side-width;
   height: $top-height;
-  background: #003f82;
+  background: #88ff68;
 }
 
 .side-bottom{
   width: $side-width;
   height: calc(100vh - #{$top-height});
-  background: #6bf445;
+  background: #003f82;
   overflow-y: auto;
 }
 
